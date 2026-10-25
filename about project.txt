@@ -1,0 +1,246 @@
+Brooo Amisha 🥹❤️ Now I understand exactly what you want to do with NoticeNest.
+
+We're not just making a small Java project to upload to GitHub. We're going to use it as your learning journey, starting from absolute beginner level and gradually building it into a complete, advanced application using Java, Spring Boot, SQL, REST APIs, frontend technologies, and AI.
+
+And I want you to understand the code you write, not just copy code from me.
+🚀 Our Mission: Build NoticeNest from Beginner to Advanced
+We'll develop the project in stages. Every stage will teach you concepts that you'll actually use in software development jobs.
+🗺️ Our complete roadmap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phase 1: Java fundamentals — Our current stage 🟢
+Goal: Build a working console-based task manager.
+
+You'll learn:
+- Variables and data types
+- Scanner for user input
+- if-else conditions
+- switch statements
+- for and while loops
+- ArrayList and basic collections
+- Methods
+- Exception handling
+- Object-oriented programming (OOP)
+- File handling
+NoticeNest features:
+- [x] Welcome screen and username
+- [x] Add tasks
+- [x] View tasks
+- [x] Delete tasks
+- [ ] Validate user input more thoroughly
+- [ ] Mark tasks as completed
+- [ ] Add task priorities
+- [ ] Add due dates
+- [ ] Search and filter tasks
+- [ ] Save tasks when the program closes
+We'll complete these features while learning the concepts behind them.
+
+Our rule: You write the code. I explain the concepts, give you hints, review your code, and help you debug errors.
+Phase 2: Object-oriented programming and clean Java code
+Goal: Transform NoticeNest from a single large class into a properly structured Java application.
+
+We'll learn:
+Concept	How we'll use it
+Classes and objects	Create a Task class
+Constructors	Create tasks with initial values
+Encapsulation	Protect task data
+Enums	Represent task priorities and status
+Methods	Separate operations into reusable functions
+Interfaces	Define how task storage works
+Collections	Organize and search tasks
+Exception handling	Handle invalid inputs safely
+File handling	Save and load tasks
+
+
+For example, instead of storing every task as a simple String, we'll eventually have a Task object with properties such as:
+- Task ID
+- Title
+- Description
+- Due date
+- Priority
+- Completion status
+Don't worry if these concepts seem unfamiliar now. We'll learn them when we need them.
+Phase 3: SQL and database integration
+Goal: Store tasks permanently in a database.
+
+Currently, your ArrayList exists only while the program is running. When you close NoticeNest, the data disappears.
+
+We'll learn SQL and database concepts such as:
+- Tables, rows and columns
+- Primary keys
+- INSERT, SELECT, UPDATE and DELETE
+- Filtering and sorting
+- Joins
+- Database relationships
+- JDBC and database connections
+We'll start with a relational database such as MySQL or PostgreSQL.
+
+Eventually, NoticeNest will retrieve tasks from a database rather than relying on an in-memory ArrayList.
+Phase 4: Spring Boot and REST APIs
+Goal: Turn NoticeNest into a backend application that other applications can communicate with.
+
+We'll learn:
+- Spring Boot project structure
+- Maven and dependencies
+- Controllers
+- Services
+- Repositories
+- REST APIs
+- HTTP methods and status codes
+- Request and response bodies
+- DTOs
+- Validation
+- Global exception handling
+- Spring Data JPA
+- Database integration
+For example, your application will eventually support endpoints like these:
+Method	Endpoint	Purpose
+POST	/api/tasks	Create a task
+GET	/api/tasks	Retrieve tasks
+GET	/api/tasks/{id}	Retrieve one task
+PUT	/api/tasks/{id}	Update a task
+DELETE	/api/tasks/{id}	Delete a task
+
+
+These are planned endpoints, not something we need to build today.
+
+Important: We won't jump into Spring Boot before you understand the Java fundamentals needed to work with it.
+Phase 5: Frontend development
+Goal: Give NoticeNest a proper user interface.
+
+We'll learn HTML, CSS and JavaScript, then build a frontend that communicates with our Spring Boot backend.
+
+The application could eventually have:
+- A dashboard showing all tasks
+- Add and edit task forms
+- Due-date reminders
+- Priority indicators
+- Completed-task filters
+- Search functionality
+- Responsive layouts for mobile and desktop
+Your console application will gradually become a web application.
+Phase 6: Authentication and security
+Goal: Make NoticeNest suitable for multiple users.
+
+We'll learn:
+- User registration and login
+- Password hashing
+- Authentication and authorization
+- Spring Security
+- User-specific tasks
+- Input validation
+- Secure configuration
+- Basic API security practices
+We'll also ensure that users cannot access other users' private tasks.
+Phase 7: AI integration 🤖
+Goal: Make NoticeNest an AI-powered task management application.
+
+Once the core application works, we'll explore features such as:
+
+1. AI task breakdown
+
+User enters:
+Prepare for my Java interview.
+
+AI suggests smaller tasks, such as revising OOP, practising collections, and solving coding problems.
+
+2. Smart task prioritization
+
+Use task deadlines, importance and estimated effort to help users decide what to work on first.
+
+3. AI study planner
+
+Generate a study schedule based on the user's goals and available time.
+
+4. Natural-language task creation
+
+User types:
+Remind me to practise SQL tomorrow evening.
+
+The application interprets the request and creates a task with an appropriate date and time.
+
+5. AI assistant
+
+Users can ask questions about their own tasks and receive suggestions based on authorized task data.
+
+We'll learn how to integrate an AI API, handle its responses, manage errors, and protect API keys. AI-generated dates and actions will be validated before being saved.
+Phase 8: Advanced engineering and deployment
+Goal: Make NoticeNest a polished portfolio project.
+
+We'll cover:
+- Unit testing with JUnit
+- Mocking with Mockito
+- API testing
+- Logging
+- Git and GitHub workflows
+- Environment variables and secrets
+- Deployment
+- Production database configuration
+- API documentation
+- Performance and security basics
+- Docker fundamentals
+- CI/CD concepts
+We'll also improve the README and document how someone can run the project.
+📍 Where are we right now?
+We're at Phase 1, working on the Java console application.
+
+You have already written code using ArrayList, loops, switch, and Scanner.
+
+I recommend that we complete the following tasks in order:
+Order	Task	Main learning
+1	Finish testing add, view and delete	Conditions and debugging
+2	Mark tasks as completed	Updating data
+3	Add priorities	Strings and enums later
+4	Add due dates	Java date and time API
+5	Search and filter tasks	Loops and string handling
+6	Refactor into methods	Reusable code
+7	Create the Task class	OOP
+8	Save and load tasks	File handling
+
+
+After these, we'll move toward database integration and Spring Boot.
+
+We won't rush just to reach the advanced features. A strong understanding of the basics will make those later stages much easier.
+👩‍🏫 How I'll teach you
+Let's follow these rules throughout our project.
+
+1. One feature at a time.
+We won't start five new things at once.
+
+2. You write the code.
+I'll give you a goal, explain the concepts, and provide hints. I'll review your code when you send it.
+
+3. We'll understand errors.
+If your program crashes, we'll identify why it happened and fix the underlying problem.
+
+4. We'll build on the same project.
+We'll keep improving NoticeNest rather than creating unrelated beginner projects every day.
+
+5. We'll revisit older concepts.
+I'll ask you small questions occasionally to check whether you understand what you're writing.
+
+6. We'll keep the code honest.
+We won't claim that NoticeNest has AI, a database, or a backend until we actually implement those features.
