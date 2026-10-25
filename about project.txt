@@ -1,4 +1,4 @@
-Brooo Amisha 🥹❤️ Now I understand exactly what you want to do with NoticeNest.
+
 
 We're not just making a small Java project to upload to GitHub. We're going to use it as your learning journey, starting from absolute beginner level and gradually building it into a complete, advanced application using Java, Spring Boot, SQL, REST APIs, frontend technologies, and AI.
 
