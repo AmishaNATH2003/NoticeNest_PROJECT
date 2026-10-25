@@ -10,17 +10,14 @@ public class noticeNest{
         String userName = value.nextLine();
         System.out.println("Welcome, " + userName + "!");
         System.out.println("Manage your tasks in one place.");
-        System.out.println("Enter today's goal: ");
         ArrayList<String> tasks = new ArrayList<>();
-        String task = value.nextLine();
-        System.out.println("Today's goal: "+ task); 
-        tasks.add(task);
+        //String task = value.nextLine();
         
-       
         while(true){
         System.out.println("\n1. Add a task");
         System.out.println("2. View tasks");
-        System.out.println("3. Exit");
+        System.out.println("3. Delete a task");
+        System.out.println("4. Exit");
         System.out.println("Choose an option: ");
         int choice = value.nextInt();
         switch (choice) {
@@ -45,10 +42,30 @@ public class noticeNest{
                 }
                 break;
             case 3:
+                System.out.println("Delete task");
+                if(tasks.isEmpty()){
+                    System.out.println("No task need to select");
+                }else{
+                    System.out.println("Select deteting task: " );
+                    for(int i=0;i<tasks.size();i++){
+                    System.out.println((i+1) + " " +tasks.get(i));
+                    }
+                    System.out.println("Enter the task number to delete:");
+                    int deleteChoice = value.nextInt();
+                    if(deleteChoice>=1 && deleteChoice<=tasks.size()){
+                    tasks.remove(deleteChoice - 1);
+                    System.out.println("Task deleted successfully!");
+                    }
+                    else{
+                        System.out.println("Invalid task number. Please try again.");
+                    }
+               }
+               break;
+            case 4:
                 System.out.println("Exiting NoticeNest. Goodbye!");
-
                 return;
-                default:
+
+            default:
                 System.out.println("Invalid option. Please choose 1, 2, or 3");
                 break;
             }
