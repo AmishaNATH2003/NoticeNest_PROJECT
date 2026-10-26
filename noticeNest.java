@@ -17,7 +17,8 @@ public class noticeNest{
         System.out.println("\n1. Add a task");
         System.out.println("2. View tasks");
         System.out.println("3. Delete a task");
-        System.out.println("4. Exit");
+        System.out.println("4. Mark a task as completed");
+        System.out.println("5. Exit");
         System.out.println("Choose an option: ");
         int choice = value.nextInt();
         switch (choice) {
@@ -62,11 +63,36 @@ public class noticeNest{
                }
                break;
             case 4:
+                System.out.println("Mark a task as completed");
+                if(tasks.isEmpty()){
+                    System.out.println("There are no tasks to complete");
+                }else{
+                    System.out.println("Availabe task: ");
+                    for(int i=0;i<tasks.size(); i++){
+                    System.out.println((i+1) + " " +tasks.get(i));
+                    }
+                    System.out.println("Enter the task number to mark as completed: ");
+                    int updatingTask= value.nextInt();
+                    //String index = value.nextLine();
+                    if(updatingTask>=1 && updatingTask<= tasks.size()){
+                        int index = updatingTask-1;
+                        if(tasks.get(index).endsWith("COMPLETED")){
+                            System.out.println("This task is already completed!");
+                        }else{
+                            tasks.set(index, tasks.get(index) + " [COMPLETED]");
+                            System.out.println("Task marked as completed successfully!");
+                        }
+                    }else{
+                        System.out.println("Invalid task number. Please try again.");
+                    }
+                }
+                break;
+            case 5:
                 System.out.println("Exiting NoticeNest. Goodbye!");
                 return;
 
             default:
-                System.out.println("Invalid option. Please choose 1, 2, or 3");
+                System.out.println("Invalid option. Please choose 1 to 5");
                 break;
             }
         
