@@ -1,5 +1,5 @@
 import java.util.*;
-public class noticeNest{
+public class main{
     public static void main(String[] arg){
         System.out.println("=====================================");
         System.out.println("SMART DEADLINE MANAGER");
