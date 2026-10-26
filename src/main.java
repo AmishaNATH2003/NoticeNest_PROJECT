@@ -94,7 +94,7 @@ public class main{
                     //String index = value.nextLine();
                     if(updatingTask>=1 && updatingTask<= tasks.size()){
                         int index = updatingTask-1;
-                        if(tasks.get(index).endsWith("COMPLETED")){
+                        if(tasks.get(index).endsWith("[COMPLETED]")){
                             System.out.println("This task is already completed!");
                         }else{
                             tasks.set(index, tasks.get(index) + " [COMPLETED]");
