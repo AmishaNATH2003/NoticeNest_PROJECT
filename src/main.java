@@ -27,8 +27,26 @@ public class main{
                 System.out.println("Enter your task:");
                 //System.out.println("Complete java practice: ");
                 String new_task = value.nextLine();
-                tasks.add(new_task);
-                System.out.println("Task added: "+ new_task);
+                System.out.println("Choose task priority:");
+                System.out.println("1. High");
+                System.out.println("2. Medium");
+                System.out.println("3. Low");
+                System.out.println("Enter priority(1-3)");
+                int priorityChoice = value.nextInt();
+                String priority = "";
+                if(priorityChoice==1){
+                    priority="HIGH";
+                    
+                }else if(priorityChoice==2){
+                    priority = "MEDIUM";
+                }else if(priorityChoice==3){
+                    priority ="LOW";
+                }else{
+                    System.out.println("Invalid priority");
+                    break;
+                }
+                tasks.add(new_task + " [" + priority + "]");
+                System.out.println("Task added successfully!");
                 break;
             case 2:
                 System.out.println("View task");
