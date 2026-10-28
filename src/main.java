@@ -96,6 +96,7 @@ public class main{
                         Task task = tasks.get(i);
                         System.out.println((i+1) + ". " + task.name + " [" + task.priority + "]"+ (task.completed ? "[COMPLETED]": "[PENDING]"));
                     }
+                    
                     System.out.println("Enter the task number to mark as completed[1 or 2]: ");
                     int updatingTask= value.nextInt();
                     //String index = value.nextLine();
