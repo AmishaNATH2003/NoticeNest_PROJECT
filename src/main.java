@@ -10,16 +10,10 @@ public class main{
         String userName = value.nextLine();
         System.out.println("Welcome, " + userName + "!");
         System.out.println("Manage your tasks in one place.");
-        Task task1 = new Task();
-        task1.name = "Learn java";
-        task1.priority = "High";
-        task1.completed = false;
-        System.out.println(task1.name);
-        System.out.println(task1.priority);
-        System.out.println(task1.completed);
+        //Task task1 = new Task();
 
         
-        ArrayList<String> tasks = new ArrayList<>();
+        ArrayList<Task> tasks = new ArrayList<>();
         //String task = value.nextLine();
         
         while(true){
@@ -54,7 +48,8 @@ public class main{
                     System.out.println("Invalid priority");
                     break;
                 }
-                tasks.add(new_task + " [" + priority + "]");
+                Task newTask = new Task(new_task, priority);
+                tasks.add(newTask);
                 System.out.println("Task added successfully!");
                 break;
             case 2:
@@ -65,7 +60,8 @@ public class main{
                 else{
                     System.out.println("Your task: " );
                     for(int i=0; i<tasks.size();i++){
-                    System.out.println((i+1) + " " +tasks.get(i));
+                        Task task = tasks.get(i);
+                        System.out.println((i+1) + ". " + task.name + " [" + task.priority + "]" + (task.completed ? "[COMPLETED]" : "[PENDING]"));
                     }
                 }
                 break;
@@ -76,7 +72,8 @@ public class main{
                 }else{
                     System.out.println("Select deteting task: " );
                     for(int i=0;i<tasks.size();i++){
-                    System.out.println((i+1) + " " +tasks.get(i));
+                        Task task = tasks.get(i);
+                        System.out.println((i+1) + ". " + task.name+ " [" + task.priority + "]");
                     }
                     System.out.println("Enter the task number to delete:");
                     int deleteChoice = value.nextInt();
@@ -96,18 +93,20 @@ public class main{
                 }else{
                     System.out.println("Availabe task: ");
                     for(int i=0;i<tasks.size(); i++){
-                    System.out.println((i+1) + " " +tasks.get(i));
+                        Task task = tasks.get(i);
+                        System.out.println((i+1) + ". " + task.name + " [" + task.priority + "]"+ (task.completed ? "[COMPLETED]": "[PENDING]"));
                     }
-                    System.out.println("Enter the task number to mark as completed: ");
+                    System.out.println("Enter the task number to mark as completed[1 or 2]: ");
                     int updatingTask= value.nextInt();
                     //String index = value.nextLine();
                     if(updatingTask>=1 && updatingTask<= tasks.size()){
-                        int index = updatingTask-1;
-                        if(tasks.get(index).endsWith("[COMPLETED]")){
+                        int index = updatingTask -1;
+                        Task task = tasks.get(index);
+                        if(task.completed){
                             System.out.println("This task is already completed!");
                         }else{
-                            tasks.set(index, tasks.get(index) + " [COMPLETED]");
-                            System.out.println("Task marked as completed successfully!");
+                            task.completed = true;
+                            System.out.println("Tassk marked as completed successfully!");
                         }
                     }else{
                         System.out.println("Invalid task number. Please try again.");
