@@ -10,6 +10,15 @@ public class main{
         String userName = value.nextLine();
         System.out.println("Welcome, " + userName + "!");
         System.out.println("Manage your tasks in one place.");
+        Task task1 = new Task();
+        task1.name = "Learn java";
+        task1.priority = "High";
+        task1.completed = false;
+        System.out.println(task1.name);
+        System.out.println(task1.priority);
+        System.out.println(task1.completed);
+
+        
         ArrayList<String> tasks = new ArrayList<>();
         //String task = value.nextLine();
         
