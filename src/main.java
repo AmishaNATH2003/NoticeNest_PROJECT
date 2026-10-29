@@ -61,7 +61,7 @@ public class main{
                     System.out.println("Your task: " );
                     for(int i=0; i<tasks.size();i++){
                         Task task = tasks.get(i);
-                        System.out.println((i+1) + ". " + task.name + " [" + task.priority + "]" + (task.completed ? "[COMPLETED]" : "[PENDING]"));
+                        System.out.println((i+1) + ". " + task.getInformation());
                     }
                 }
                 break;
@@ -73,7 +73,7 @@ public class main{
                     System.out.println("Select deteting task: " );
                     for(int i=0;i<tasks.size();i++){
                         Task task = tasks.get(i);
-                        System.out.println((i+1) + ". " + task.name+ " [" + task.priority + "]");
+                        System.out.println((i+1) + ". " + task.getInformation());
                     }
                     System.out.println("Enter the task number to delete:");
                     int deleteChoice = value.nextInt();
@@ -94,7 +94,7 @@ public class main{
                     System.out.println("Availabe task: ");
                     for(int i=0;i<tasks.size(); i++){
                         Task task = tasks.get(i);
-                        System.out.println((i+1) + ". " + task.name + " [" + task.priority + "]"+ (task.completed ? "[COMPLETED]": "[PENDING]"));
+                        System.out.println((i+1) + ". " + task.getInformation());
                     }
                     
                     System.out.println("Enter the task number to mark as completed[1 or 2]: ");
@@ -107,7 +107,7 @@ public class main{
                             System.out.println("This task is already completed!");
                         }else{
                             task.completed = true;
-                            System.out.println("Tassk marked as completed successfully!");
+                            System.out.println("Task marked as completed successfully!");
                         }
                     }else{
                         System.out.println("Invalid task number. Please try again.");

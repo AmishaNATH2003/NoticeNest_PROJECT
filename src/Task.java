@@ -10,6 +10,12 @@ public class Task {
     this.completed = false;
    }
 
+   public String getInformation(){
+      String status;
+      if(completed) status = "COMPLETED";
+      else status = "PENDING";
+      return name + " [" + priority + "]" + " [" + status + "]";
+   }
    
 
 }
