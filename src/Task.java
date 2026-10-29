@@ -1,7 +1,7 @@
 public class Task {
-   public String name ;
-   public String priority;
-   public boolean completed;
+   private String name ;
+   private String priority;
+   private boolean completed;
 
    //constructor
    public Task(String name, String priority){
@@ -17,5 +17,19 @@ public class Task {
       return name + " [" + priority + "]" + " [" + status + "]";
    }
    
+   public String getName(){
+      return name;
+   }
+
+   public String getPriority(){
+      return priority;
+   }
+
+   public boolean isCompleted(){
+      return completed;
+   }
+
+   
+
 
 }
