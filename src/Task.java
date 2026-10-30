@@ -9,7 +9,7 @@ public class Task {
     this.priority = priority;
     this.completed = false;
    }
-
+   
    public String getInformation(){
       String status;
       if(completed) status = "COMPLETED";
