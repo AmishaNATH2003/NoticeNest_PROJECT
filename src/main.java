@@ -103,7 +103,12 @@ public class main{
                     if(updatingTask>=1 && updatingTask<= tasks.size()){
                         int index = updatingTask -1;
                         Task task = tasks.get(index);
-                        
+                        if(task.completed){
+                            System.out.println("This task is already completed!");
+                        }else{
+                            task.completed = true;
+                            System.out.println("Task marked as completed successfully!");
+                        }
                     }else{
                         System.out.println("Invalid task number. Please try again.");
                     }
