@@ -112,7 +112,6 @@ public class main{
                     }else{
                         System.out.println("Invalid task number. Please try again.");
                     }
-
                 }
                 break;
             case 5:
@@ -123,7 +122,6 @@ public class main{
                 System.out.println("Invalid option. Please choose 1 to 5");
                 break;
             }
-        //value.close();
         }
     }
 }
