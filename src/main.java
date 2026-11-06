@@ -121,6 +121,7 @@ public class main{
             default:
                 System.out.println("Invalid option. Please choose 1 to 5");
                 break;
+                
             }     
         }
     }
