@@ -11,11 +11,8 @@ public class main{
         System.out.println("Welcome, " + userName + "!");
         System.out.println("Manage your tasks in one place.");
         //Task task1 = new Task();
-
-        
         ArrayList<Task> tasks = new ArrayList<>();
         //String task = value.nextLine();
-        
         while(true){
         System.out.println("\n1. Add a task");
         System.out.println("2. View tasks");
